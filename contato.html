@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato - Alessandro Gomes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <header>
+    <div class="container">
+      <h1>Entre em Contato</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobreMim.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal do formulário -->
+  <main>
+    <section class="contato">
+      <!-- Formulario de contato e id para poder usar js -->
+      <form id="formContato">
+        <!-- Campo nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <!-- Campo email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Campo para a mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <!-- Botão para enviar -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé da pagiina com relogio -->
+  <footer>
+     <p>&copy; 2025 - Alessandro Gomes</p>
+     <div>Hora atual: <span id="relogio"></span></div>
+  </footer>
+
+  <!-- Link para o jss -->
+  <script src="script.js"></script>
+</body>
+</html>

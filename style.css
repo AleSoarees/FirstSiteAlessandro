@@ -1,0 +1,138 @@
+
+/* Cores principais */
+:root {
+  --azul-escuro: #003366;
+  --azul-claro: #3399ff;
+  --fundo-claro: #f0f8ff;
+  --branco: #ffffff;
+  --cinza-claro: #eeeeee;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset para tirar margens e paddings padrões do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo geral do corpo*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fundo-claro);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  width: 100vw;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  padding: 20px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px var(--sombra);
+}
+/* Centraliza o conteúdo do cabeçalho */
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}   
+/* Título do cabeçalho */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+/* Lista de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+/* link do menu*/
+nav a {
+  color: var(--azul-claro);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+/* efeito do mouse*/
+nav a:hover {
+  color: var(--branco);
+}
+
+/* Area principal do conteudo do site */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--branco);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--sombra);
+  text-align: justify;  /* Isso centraliza o texto */
+}
+/* Epaçamento entre seções */
+section {
+  margin-bottom: 30px;
+}
+/* Estilo dos títulos */
+h2, h3 {
+  color: var(--azul-escuro);
+  margin-bottom: 10px;
+}
+/*parágrafos e listas */
+p, li {
+  margin-bottom: 10px;
+}
+/* Indentação da lista e alinhamento */
+ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Estilo formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* Campos do formulário */
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+/* Destaque ao focar nos campos */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--azul-claro);
+}
+/* Botão do formulário */
+button {
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Efeito ao passar o mouse no botão */
+button:hover {
+  background-color: var(--azul-escuro);
+}
+/* Rodapé */
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 0.9rem;
+  color: #555;
+  
+} 
+
